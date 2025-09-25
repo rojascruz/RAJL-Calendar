@@ -1,8 +1,6 @@
-/* ===================================
-   RAJL Calendar - Archivo Principal
-   =================================== */
+/* RAJL Calendar - Archivo Principal */
 
-// Utilidades simplificadas integradas
+// Utilidades integradas
 const DateUtils = {
     formatCurrentDate: () => {
         const today = new Date();

@@ -479,8 +479,6 @@
     overflow-y: auto;
 }
 
-/* Modal de confirmación preparado */
-
 /* Modal de confirmación */
 .confirm-modal {
     max-width: 450px;
