@@ -1,0 +1,51 @@
+/* ===================================
+   Estilos de Navegación
+   =================================== */
+
+/* Navegación del calendario */
+.calendar-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-6);
+    padding: 0 var(--space-1);
+}
+
+.nav-btn {
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: var(--radius-lg);
+    width: var(--nav-btn-size);
+    height: var(--nav-btn-size);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-lg);
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-primary);
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-primary-hover);
+}
+
+.nav-btn:active {
+    transform: translateY(0);
+}
+
+.nav-btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.month-year {
+    font-size: var(--font-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    text-align: center;
+    min-width: 200px;
+    transition: var(--transition-fast);
+}

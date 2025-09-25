@@ -1,0 +1,310 @@
+/* ===================================
+   Diseño Responsive
+   =================================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        padding: var(--space-3);
+        align-items: flex-start;
+        padding-top: var(--space-5);
+    }
+    
+    .calendar-container {
+        padding: var(--space-5);
+        max-width: 100%;
+        border-radius: var(--radius-xl);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .calendar-title {
+        font-size: 1.75rem;
+        margin-bottom: var(--space-4);
+    }
+    
+    .month-year {
+        font-size: 1.25rem;
+        min-width: 180px;
+    }
+    
+    .nav-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+    
+    .day {
+        font-size: 0.95rem;
+        border-radius: var(--radius-md);
+        min-height: 44px;
+    }
+    
+    .weekday {
+        padding: var(--space-2) 0;
+        font-size: 0.8rem;
+    }
+    
+    .calendar-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-4);
+    }
+    
+    .calendar-info {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    /* Modal en tablets */
+    .modal {
+        width: 95%;
+        max-height: 90vh;
+        margin: var(--space-3);
+    }
+    
+    .modal-header {
+        padding: 18px 20px;
+    }
+    
+    .modal-body {
+        padding: 24px 20px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    body {
+        padding: var(--space-2);
+        align-items: flex-start;
+        padding-top: var(--space-3);
+    }
+    
+    .calendar-container {
+        padding: var(--space-4);
+        border-radius: var(--radius-lg);
+        margin: var(--space-2);
+        width: calc(100% - var(--space-4));
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .calendar-title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: var(--space-3);
+    }
+    
+    .calendar-title i {
+        font-size: 1.3rem;
+    }
+    
+    .calendar-navigation {
+        margin-bottom: var(--space-4);
+    }
+    
+    .month-year {
+        font-size: 1.1rem;
+        min-width: 140px;
+        text-align: center;
+    }
+    
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    
+    .weekday {
+        padding: var(--space-2) 0;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+    
+    .day {
+        font-size: 0.9rem;
+        border-radius: var(--radius-sm);
+        min-height: 40px;
+        font-weight: 500;
+    }
+    
+    .day.has-event::after {
+        width: 4px;
+        height: 4px;
+        bottom: 2px;
+    }
+    
+    .calendar-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-3);
+        margin-top: var(--space-4);
+    }
+    
+    .today-btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+        border-radius: var(--radius-lg);
+        font-weight: 600;
+    }
+    
+    .calendar-info {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--space-4);
+    }
+    
+    .info-item {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    
+    .info-dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    /* Modal en móviles */
+    .modal {
+        width: 95%;
+        max-height: 95vh;
+        margin: var(--space-2);
+        border-radius: var(--radius-lg);
+    }
+    
+    .modal-header {
+        padding: 16px 20px;
+    }
+    
+    .modal-title {
+        font-size: 1.2rem;
+    }
+    
+    .modal-body {
+        padding: 20px;
+        max-height: 70vh;
+    }
+    
+    .form-input,
+    .form-textarea {
+        padding: 14px 16px;
+        font-size: 1rem;
+        border-radius: var(--radius-md);
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+    
+    .color-selector {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-3);
+    }
+    
+    .color-option {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .modal-actions {
+        flex-direction: column-reverse;
+        padding: 20px;
+        gap: var(--space-3);
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 320px) {
+    .calendar-container {
+        padding: var(--space-3);
+    }
+    
+    .calendar-title {
+        font-size: var(--font-lg);
+    }
+    
+    .month-year {
+        font-size: var(--font-sm);
+        min-width: 100px;
+    }
+    
+    .nav-btn {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .day {
+        font-size: 11px;
+    }
+    
+    .weekday {
+        font-size: 9px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    .calendar-container {
+        max-width: 520px;
+        padding: var(--space-8);
+    }
+    
+    .calendar-title {
+        font-size: 2rem;
+    }
+    
+    .day {
+        font-size: var(--font-lg);
+    }
+    
+    .nav-btn {
+        width: 48px;
+        height: 48px;
+        font-size: var(--font-xl);
+    }
+}
+
+/* Orientación landscape en móviles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .calendar-container {
+        padding: var(--space-3);
+    }
+    
+    .calendar-header {
+        margin-bottom: var(--space-3);
+    }
+    
+    .calendar-navigation {
+        margin-bottom: var(--space-3);
+    }
+    
+    .calendar-grid {
+        margin-bottom: var(--space-3);
+    }
+    
+    .calendar-title {
+        font-size: var(--font-lg);
+        margin-bottom: var(--space-1);
+    }
+    
+    .day {
+        font-size: var(--font-xs);
+    }
+}
+
+/* Mejoras para pantallas de alta densidad */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .day.has-event::after {
+        box-shadow: 0 1px 2px rgba(229, 62, 62, 0.4);
+    }
+    
+    .info-dot {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+}

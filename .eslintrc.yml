@@ -1,0 +1,58 @@
+# Configuración ESLint para RAJL Calendar
+
+root: true
+
+env:
+  browser: true
+  es2022: true
+
+parserOptions:
+  ecmaVersion: 2022
+  sourceType: module
+
+extends:
+  - eslint:recommended
+
+rules:
+  # Mejores prácticas
+  no-unused-vars: warn
+  no-undef: error
+  no-console: off
+  no-debugger: warn
+  
+  # Estilo de código
+  indent:
+    - error
+    - 4
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
+  
+  # ES6+
+  prefer-const: error
+  no-var: error
+  arrow-spacing: error
+  
+  # Espaciado
+  space-before-blocks: error
+  keyword-spacing: error
+  comma-spacing: error
+  
+  # Otros
+  eqeqeq: error
+  curly: error
+  brace-style: error
+
+globals:
+  window: readonly
+  document: readonly
+  console: readonly
+  localStorage: readonly
+  setTimeout: readonly
+  setInterval: readonly
+  clearTimeout: readonly
+  clearInterval: readonly
+  requestAnimationFrame: readonly

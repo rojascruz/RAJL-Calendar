@@ -1,0 +1,26 @@
+/* ===================================
+   RAJL Calendar - CSS Principal
+   ===================================
+   
+   Este archivo importa todos los módulos CSS
+   para mantener una estructura organizada
+   
+   Estructura:
+   - reset.css: Normalización y reset
+   - variables.css: Variables CSS globales
+   - base.css: Estilos base del body y elementos globales
+   - components/: Estilos específicos de componentes
+*/
+
+/* Importar archivos base */
+@import url('./reset.css');
+@import url('./variables.css');
+@import url('./base.css');
+
+/* Importar componentes */
+@import url('./components/calendar.css');
+@import url('./components/navigation.css');
+@import url('./components/modal.css');
+@import url('./components/buttons.css');
+@import url('./components/animations.css');
+@import url('./components/responsive.css');

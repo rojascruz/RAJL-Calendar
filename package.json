@@ -1,0 +1,66 @@
+{
+  "name": "rajl-calendar",
+  "version": "1.0.0",
+  "description": "Un calendario web moderno y elegante con funcionalidades avanzadas",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "build": "echo 'No build process needed for vanilla HTML/CSS/JS'",
+    "test": "echo 'Tests coming soon'",
+    "lint:css": "npx stylelint 'assets/css/**/*.css'",
+    "lint:js": "npx eslint 'assets/js/**/*.js'",
+    "format": "npx prettier --write 'assets/**/*.{js,css}' '*.html' '*.md'",
+    "validate": "npx html-validate index.html",
+    "serve": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "calendar",
+    "javascript",
+    "vanilla-js",
+    "responsive",
+    "modern",
+    "events",
+    "scheduler",
+    "web-app"
+  ],
+  "author": {
+    "name": "RAJL",
+    "email": "contact@rajl.dev",
+    "url": "https://github.com/rojascruz"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rojascruz/RAJL-Calendar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rojascruz/RAJL-Calendar/issues"
+  },
+  "homepage": "https://github.com/rojascruz/RAJL-Calendar#readme",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "html-validate": "^7.0.0",
+    "http-server": "^14.0.0",
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.0",
+    "serve": "^14.0.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^30.0.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not op_mini all"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "index.html",
+    "assets/",
+    "README.md",
+    "LICENSE"
+  ]
+}
