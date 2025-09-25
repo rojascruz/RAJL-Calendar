@@ -350,8 +350,28 @@ class RAJLCalendar {
             });
         }
 
+        // Event listeners para selector de colores
+        this.setupColorPicker();
+
         // Atajos de teclado
         document.addEventListener('keydown', (e) => this.handleKeyPress(e));
+    }
+
+    /**
+     * Configura los event listeners para el selector de colores
+     */
+    setupColorPicker() {
+        // Configurar event listeners para todas las opciones de color
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('color-option')) {
+                // Remover selección de todas las opciones
+                const allColorOptions = document.querySelectorAll('.color-option');
+                allColorOptions.forEach(option => option.classList.remove('selected'));
+                
+                // Agregar selección a la opción clickeada
+                e.target.classList.add('selected');
+            }
+        });
     }
 
     /**
